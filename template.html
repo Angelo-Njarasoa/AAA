@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Informations Système</title>
+    <link rel="stylesheet" href="template.css">
+</head>
+
+<body>
+    <header>
+        <h1>Résumé du système</h1>
+        <p>Généré le : <span id="timestamp"></span></p>
+    </header>
+
+    <main>
+        <section id="systeme">
+            <h2>Système</h2>
+            <p>Nom de la machine : </p>
+            <p>Système d'exploitation : </p>
+            <p>Uptime : </p>
+            <p>Nombre d'utilisateurs : </p>
+        </section>
+
+        <section id="cpu">
+            <h2>CPU</h2>
+            <p>Nombre de cœurs : </p>
+            <p>Fréquence : </p>
+            <p>Utilisation : </p>
+        </section>
+
+        <section id="memoire">
+            <h2>Mémoire</h2>
+            <p>RAM totale : </p>
+            <p>RAM utilisée : </p>
+            <p>Pourcentage :</p>
+            <div class="bar-container">
+                <div class="bar"></div>
+            </div>
+        </section>
+
+        <section id="reseau">
+            <h2>Réseau</h2>
+            <p>Adresse IP principale : </p>
+        </section>
+
+        <section id="processus">
+            <h2>Top 3 Processus</h2>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Page générée automatiquement</p>
+    </footer>
+
+    <script>
+        document.getElementById("timestamp").textContent = new Date().toLocaleString();
+    </script>
+</body>
+</html>
